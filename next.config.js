@@ -1,13 +1,4 @@
-const withMDX = require("@next/mdx")({
-  options: {
-    remarkPlugins: [],
-    rehypePlugins: [],
-  },
-  extension: /\.mdx?$/,
-});
-
-module.exports = withMDX({
-  pageExtensions: ["js", "jsx", "mdx"],
+module.exports = {
   trailingSlash: false,
   images: {
     domains: ["img.discogs.com"],
@@ -36,4 +27,4 @@ module.exports = withMDX({
       },
     ];
   },
-});
+};

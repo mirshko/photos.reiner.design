@@ -2,7 +2,7 @@ import Image from "next/image";
 import SEO from "../components/seo";
 import { clients, curated } from "../data";
 
-function Portfolio() {
+export default function PortfolioPage() {
   return (
     <main>
       <SEO title="Portfolio" path="/portfolio" />
@@ -74,5 +74,3 @@ function Portfolio() {
     </main>
   );
 }
-
-export default Portfolio;
